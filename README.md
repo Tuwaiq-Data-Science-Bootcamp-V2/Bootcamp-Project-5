@@ -1,6 +1,6 @@
 # Bootcamp-Project-5
 
-Based on what you’ve learned about Model Deployment, choose any previous Machine Learning Model then deploy it a website.
+Based on what you’ve learned about Model Deployment, choose any previous Machine Learning Model then deploy it as a website.
 
 **Final Deliverables:**
 - All files related to ML Model (Dataset, ML Model, .pkl fiels, ...etc.).
