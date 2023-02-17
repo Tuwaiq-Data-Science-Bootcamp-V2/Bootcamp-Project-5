@@ -1,12 +1,24 @@
-# Bootcamp-Project-5
+# Job Placement 
 
-Based on what you’ve learned about Model Deployment, choose any previous Machine Learning Model then deploy it as a website.
 
-**Final Deliverables:**
-- All files related to ML Model (Dataset, ML Model, .pkl fiels, ...etc.).
-- All files related to the website (view, templates, urls, ...etc.).
-- Screenshot of your final website.
-- Due Date: Sun, 19 Feb, at 8:00 a.m.
-> **Note:** This project is individual work.
+## Introduction
+Due to the growing need of educated and talented individuals, especially in developing countries, recruiting fresh graduates is a routine practice for organizations. Conventional recruiting methods and selection processes can be prone to errors and in order to optimize the whole process, some innovative methods are needed.
 
+
+## Dataset Overview
+This [Dataset](https://www.kaggle.com/datasets/ahsan81/job-placement-dataset) contains different attribute of the candidates educational history and work experience.
+
+
+## Machine Learning models
+
+
+
+- Logistic regretion with standard scaler , Accuracy = 83% 
+
+
+## Results
+
+<img src="1.png" width="400" height="230" alt="results">
+<img src="2.png" width="400" height="230" alt="results">
+<img src="3.png" width="400" height="230" alt="results">
 
