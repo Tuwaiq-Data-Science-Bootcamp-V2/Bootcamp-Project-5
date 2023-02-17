@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Result</title>
+
+  <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+    .center {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body class="center">
+
+  {% if result == 'extraverted' %}
+  <h1 style=" color: blue ; font-weight: 900;">
+  <i class="fa-solid fa-face-smile blue-color"></i> extraverted!
+
+  {% elif result == 'serious' %}
+  <h1 style="color: green ; font-weight: 900;">
+  <i class="fa-solid fa-face-smile green-color"></i> serious!
+
+  {% elif result == 'dependable' %}
+  <h1 style="color: purple ; font-weight: 900;">
+  <i class="fa-solid fa-face-smile teal-color"></i> dependable!
+
+  {% elif result == 'lively' %}
+  <h1 style="color: orange ; font-weight: 900;">
+  <i class="ffa-solid fa-face-smile yellow-color"></i> lively!
+
+  {% elif result == 'responsible' %}
+  <h1 style="color: red ; font-weight: 900;">
+  <i class="fa-solid fa-face-smile red-color"></i> responsible!
+
+  {% else %}
+  <h1 style="color: rgb(31, 15, 15); font-weight: 900;">ERROR</h1>
+  {% endif %}
+
+ </body>
+
+</html>
