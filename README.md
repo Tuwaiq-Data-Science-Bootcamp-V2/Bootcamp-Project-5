@@ -1,4 +1,7 @@
 # Personality analysis
+<img src="2023-02-17.png" width="450" height="450"> 
+
+
 ## analysis your personality based on:
 - Gender
 - Age
