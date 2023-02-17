@@ -6,6 +6,6 @@
 
 # Airlines Delay
 
-<img src="Airlines.png" width="500" height="500">
+<img src="Airlines.png" width="800" height="800">
 
 
