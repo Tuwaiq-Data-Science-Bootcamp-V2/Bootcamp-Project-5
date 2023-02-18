@@ -1,5 +1,5 @@
 
-<img title="a title" alt="Alt text" src="https://www.displayr.com/wp-content/uploads/2017/07/customer-churn-edit.jpeg">
+<img title="a title" alt="Alt text" src="https://www.displayr.com/wp-content/uploads/2017/07/customer-churn-edit.jpeg" height=350 width=700> 
 
 # **Bank Customer Churn Prediction**
 
