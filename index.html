@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/>
+  <title>HOME</title>
+</head>
+<body>
+<div class="login">
+	<h1>HEART DISEASE PREDICTION</h1>
+    <form action="result">
+        {% csrf_token %}
+        <input id="age" type="text" name="age" placeholder="age" required="required" />
+
+        <label for="sex">GENDER</label>
+        <select id="sex" name="sex">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+
+        <label for="cp">CHEST PAIN TYPE</label>
+        <select id="cp" name="cp">
+          <option value="asymptomatic">asymptomatic</option>
+          <option value="atypical angina">atypical angina</option>
+          <option value="non-anginal">non-anginal</option>
+          <option value="typical angina">typical angina</option>
+        </select>
+
+        <label for="trestbps">RESTING BLOOD PRESSURE</label>
+        <input id="trestbps" type="text" name="trestbps" placeholder="resting blood pressure " required="required" />
+
+        <input id="chol" type="text" name="chol" placeholder="cholesterol" required="required" />
+
+        <label for="fbs">BLOOD SUGAR > 120</label>
+        <select id="fbs" name="fbs">
+          <option value="False">False</option>
+          <option value="True">True</option>
+          <option value="nan">nan</option>
+        </select>
+
+        <label for="restecg">RESTING ELECTROCARDIOGRAPHIC RESULTS</label>
+        <select id="restecg" name="restecg">
+          <option value="lv hypertrophy">lv hypertrophy</option>
+          <option value="normal">normal</option>
+          <option value="st-t abnormality">st-t abnormality</option>
+          <option value="nan">nan</option>
+        </select>
+
+        <input id="thalch" type="text" name="thalch" placeholder="maximum heart rate achieved" required="required" />
+
+        <label for="exang">EXERCISE INCLUDED ?</label>
+        <select id="exang" name="exang">
+          <option value="True">True</option>
+          <option value="False">False</option>
+          <option value="nan">nan</option>
+        </select>
+
+        <input id="oldpeak" type="text" name="oldpeak" placeholder="ST depression induced" required="required" />
+
+        <label for="slope">Slope</label>
+        <select id="slope" name="slope">
+          <option value="downsloping">downsloping</option>
+          <option value="flat">flat</option>
+          <option value="upsloping">upsloping</option>
+          <option value="nan">nan</option>
+        </select>
+
+        <input id="ca" type="text" name="ca" placeholder="number of major vessels " required="required" />
+
+        <label for="thal">HEART RATE</label>
+        <select id="thal" name="thal">
+          <option value="fixed defect">fixed defect</option>
+          <option value="normal">normal</option>
+          <option value="reversable defect">reversable defect</option>
+          <option value="nan">nan</option>
+        </select>
+      <input class="btn btn-primary btn-lg btn-block" type="submit" value='PREDICT'>
+    </form>
+</div>
+</body>
