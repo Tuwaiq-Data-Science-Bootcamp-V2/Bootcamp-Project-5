@@ -1,5 +1,5 @@
 
-<img title="a title" alt="Alt text" src="https://learn.g2.com/hubfs/Customer%20Retention%20Marketing.png"> 
+<img title="a title" alt="Alt text" src="https://learn.g2.com/hubfs/Customer%20Retention%20Marketing.png" width=950 height=500> 
 
 # **Bank Customer Churn Prediction**
 
