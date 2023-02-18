@@ -1,12 +1,14 @@
-# Bootcamp-Project-5
-
-Based on what you’ve learned about Model Deployment, choose any previous Machine Learning Model then deploy it as a website.
-
-**Final Deliverables:**
-- All files related to ML Model (Dataset, ML Model, .pkl fiels, ...etc.).
-- All files related to the website (view, templates, urls, ...etc.).
-- Screenshot of your final website.
-- Due Date: Sun, 19 Feb, at 8:00 a.m.
-> **Note:** This project is individual work.
+# Job Placement 
 
 
+## Introduction
+Model Deployment with dataset job Placemnt the target in data set are placed and not placed , its mean its get a job or not,
+and to get predection be django website.
+
+
+
+## Dataset Overview
+This [Dataset] (https://www.kaggle.com/datasets/ahsan81/job-placement-dataset) 
+
+## the model 
+i use random forest algorithm to get a predection.
