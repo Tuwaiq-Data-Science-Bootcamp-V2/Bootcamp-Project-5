@@ -9,4 +9,3 @@ Based on what you’ve learned about Model Deployment, choose any previous Machi
 - Due Date: Sun, 19 Feb, at 8:00 a.m.
 > **Note:** This project is individual work.
 
-
