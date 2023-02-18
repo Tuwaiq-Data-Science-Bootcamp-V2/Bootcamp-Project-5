@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <title>Result</title>
+
+  <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/>
+  <style>
+    .center {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(230, 239, 245);
+    }
+  </style>
+</head>
+
+<body class="center">
+
+  {% if result == 'yes' %}
+  <h1 style=" color: rgb(215, 85, 88); font-weight: 900;">
+    <img src="{% static 'broken-heart.png' %}" >
+  <i ></i> YOU WILL BE DEAD BY HEART ATTACK!
+
+  {% elif result == 'no' %}
+  <h1 style="color: rgb(85, 215, 85); font-weight: 900;">
+    <img src="{% static 'heart.png' %}" >
+  <i></i> YOU ARE HEALTHY!
+
+  {% else %}
+  <h1 style="color: rgb(31, 15, 15); font-weight: 900;">ERROR</h1>
+  {% endif %}
+
+</body>
+
+</html>
