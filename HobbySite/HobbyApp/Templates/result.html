@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Result</title>
+
+  <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+    .center {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-family: cursive;
+      background-color: rgb(230, 239, 245);
+    }
+  </style>
+</head>
+
+<body class="center">
+
+  {% if result == 'Academics' %}
+  <h1 style=" color: rgb(244 63 94); font-weight: 900;">
+  <i class="fa-solid fa-glasses-round"></i> The child's hobby is Academics
+
+  {% elif result == 'Sports' %}
+  <h1 style="color: rgb(12 74 110); font-weight: 900;">
+  <i class="fa-solid fa-person-running"></i> The child's hobby is Sports
+
+  {% elif result == 'Arts' %}
+  <h1 style="color: rgb(180 83 9); font-weight: 900;">
+  <i class="fa-solid fa-pen-paintbrush"></i> The child's hobby is Arts
+  {% endif %}
+
+</body>
+
+</html>
