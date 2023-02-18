@@ -8,7 +8,7 @@ and to get predection be django website.
 
 
 ## Dataset Overview
-This [Dataset](https://www.kaggle.com/datasets/ahsan81/job-placement-dataset) 
+This [Dataset] (https://www.kaggle.com/datasets/ahsan81/job-placement-dataset) 
 
 ## the model 
 i use random forest algorithm to get a predection.
