@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: rgb(241, 241, 241); ">
+  <!--margin: 0px auto;-->
+  <!--- position: fixed; width: 100%;text-align: center;background: #000000;color: white;font-size: 30px; -->
+<header style="position: fixed; width: 100%;text-align: center;background: #4a4a4a;color: white;font-size: 30px;top: 0;left: 0;" >
+  <h4>Web Social Network</h4>
+</header>
+
+<div style="padding-left: 30%;padding-top: 30%;padding-right: 30%;padding-bottom: 30%;">
+<form action="result">
+  {% csrf_token %}
+  
+  <div style="background-color: rgb(255, 255, 255);border-radius: 10px;border-style: solid ;border-color: black;border-width: 3px;">
+    <h4><center>Web Social Network</center></h4>
+    <div style="padding: 15%;">
+      
+      <label for="Age">Age:</label><br>
+      <input type="number" name="Age" placeholder="24" style="width: 100%;"><br>
+      <label for="EstimatedSalary">Estimated Salary:</label><br>
+      <input type="number" name="EstimatedSalary" placeholder="13500" style="width: 100%;"><br><br>
+      <label for="DealType">Gender:</label><br>
+      <select style="width: 100%;" name="Gender" >
+        <option value="None">--Select--</option>
+        <option value="Male">Male</option>
+        <option value="Fmale">Fmale</option>
+      </select><br><br>
+      <input type="submit" value="Submit">
+    </div>
+  </div>
+</form> 
+</div>
+<div>
+
+</div>
+
+
+</body>
+</html>
+
