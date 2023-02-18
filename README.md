@@ -16,3 +16,18 @@ I use Random Forest model to predict the personality, and I made a little bit of
 
 # Hiring test
 <img src="qu.png" width="450" height="450"> 
+Imagine you're an employer, and want to hire people who are specifically "responsible" or "dependable" more than anything else so this website will make easy on you because I only choose the "responsible" or "dependable" in the same data set :)
+
+## From testing we would be hiring or not based on:
+- Gender
+- Age
+- openness scaled in 1 to 9
+- neuroticism scaled in 1 to 9
+- conscientiousness scaled in 1 to 9
+- agreeableness scaled in 1 to 9
+- extraversion scaled in 1 to 9
+## The result will be:
+<img src="hire.png" width="650" height="450"> 
+or 
+<img src="not hire.png" width="650" height="450"> 
+
