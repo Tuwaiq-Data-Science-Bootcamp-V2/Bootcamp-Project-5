@@ -1,5 +1,5 @@
 
-<img title="a title" alt="Alt text" src="https://www.displayr.com/wp-content/uploads/2017/07/customer-churn-edit.jpeg" height=350> 
+<img title="a title" alt="Alt text" src="https://learn.g2.com/hubfs/Customer%20Retention%20Marketing.png"> 
 
 # **Bank Customer Churn Prediction**
 
