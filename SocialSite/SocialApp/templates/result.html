@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Would the user buy the product</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      h1 {
+        margin-top: 50px;
+      }
+
+      h2 {
+        margin-top: 50px;
+      }
+
+      .fireworks.yes {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 999;
+        overflow: hidden;
+      }
+
+      .fireworks canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+      }
+
+      .fireworks:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        z-index: 998;
+        pointer-events: none;
+      }
+
+      .fireworks.yes:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 998;
+        pointer-events: none;
+      }
+
+      .message {
+        margin: 50px auto;
+        padding: 20px;
+        max-width: 600px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        display: none;
+      }
+
+      .message.yes {
+        display: block;
+        background-color: #4CAF50;
+        color: white;
+      }
+
+      .message.no {
+        display: block;
+        background-color: #f44336;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    {% if result == 'yes' %}
+      <div class="message yes">
+        <h2>Congratulations! the user is likely to buy the product.</h2>
+      </div>
+    {% elif result == 'no' %}
+      <div class="message no">
+        <h2>Sorry, the user is unlikely to buy the product.</h2>
+      </div>
+    {% else %}
+      <div>
+        <h2>ERROR</h2>
+      </div>
+    {% endif %}
+
+    <a href="{% url 'home' %}">Back to form</a>
+
+  </body>
+</html>

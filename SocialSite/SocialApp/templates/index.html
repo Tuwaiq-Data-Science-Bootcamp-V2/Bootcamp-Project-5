@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+      }
+      form {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #555;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+      input[type="text"], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="result">
+      {% csrf_token %}
+      <h1>Would the user buy the product</h1>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value=0>Male</option>
+        <option value=1>Female</option>
+      </select>
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age">
+      <label for="salary">Salary:</label>
+      <input type="text" id="salary" name="salary">
+      <input type="submit" value="Predict">
+    </form>
+  </body>
+</html>
