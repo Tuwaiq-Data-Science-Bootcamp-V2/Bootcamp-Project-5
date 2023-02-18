@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Result</title>
+
+  <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+    .center {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(26, 36, 44);
+    }
+  </style>
+</head>
+
+<body class="center">
+
+  {% if result == 'yes' %}
+  <h1 style=" color: rgb(90, 193, 166); font-weight: 600;">
+    <img src="background0.jpg" ></img>
+  <i class="fa-regular fa-sack-dollar"></i>Salary is above 150K!
+
+
+  {% elif result == 'no' %}
+  <h1 style="color: rgb(232, 147, 147); font-weight: 600;">
+  <i class="fa-solid fa-hand-holding-dollar"></i>Salery is under 150K!
+  <img>background-image: url(background0.jpg);</img>
+
+  {% else %}
+  <h1 style="color: rgb(255, 255, 255); font-weight: 600;">ERROR</h1>
+  {% endif %}
+
+</body>
+
+</html>

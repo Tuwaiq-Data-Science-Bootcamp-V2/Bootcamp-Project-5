@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>DS Salary Predictor</title>
+
+  <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <img src="./background0.jpg" alt="" class="backgroundImg">
+  <style>
+    .center {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(26, 36, 44);
+    
+    }
+    
+
+  </style>
+</head>
+
+
+<body class="center">
+  
+
+  <h1 style="color:rgb(255, 255, 255); font-weight: 700;">
+    <i class=""></i> Data Science Salary Predictor
+  </h1>
+
+  <p style="color:rgb(255, 255, 255); font-weight: 700;">
+    Can I guess your salary?
+  </p>
+
+  <form action="result">
+    {% csrf_token %}
+
+
+      
+    <div class="form-group">
+      <input class="form-control" placeholder="Experience level (Entry, Mid or Senior)" required type="text" name="experience_level">
+    </div>
+    
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Employment_type (Full-time, Part-time, Freelance or Contract)" required type="text" name="employment_type">
+    </div>
+
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Job title" required type="text" name="job_title">
+    </div>
+
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Employee residence (Country)" required type="text" name="employee_residence">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Remote ratio (0,50 or 100)" required type="text" name="remote_ratio">
+    </div>
+
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Company location (Country)" required type="text" name="company_location">
+    </div>
+
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Company size (L, M or S)" required type="text" name="company_size">
+    </div>
+
+
+    <input class="btn btn-primary btn-lg btn-block" type="submit" value='Predict'>
+
+  </form>
+</body>
+
+</html>
