@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home page</title>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/eaf5e1e439.js" crossorigin="anonymous"></script>
+
+  <style>
+    .center {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-family:"Lucida Console", "Courier New", monospace;
+      background-color:SlateBlue;
+    }
+  </style>
+</head>
+
+
+<body class="center">
+
+  <h1 style="color:lightgrey; font-weight: 500;">
+      <i class="fa-brands fa-instagram"></i> Instagram Account Predictor
+  </h1>
+
+  <p style="color: white; font-weight: 700;">
+    know if it's fake or real ?
+  </p>
+
+  <form action="result">
+   {% csrf_token %}
+
+     <div class="form-group">
+      <input class="form-control" placeholder="num_posts" required type="text" name="num_posts">
+    </div>
+
+     <div class="form-group">
+      <input class="form-control" placeholder="num_following" required type="text" name="num_following">
+    </div>
+
+     <div class="form-group">
+      <input class="form-control" placeholder="num_followers" required type="text" name="num_followers">
+    </div>
+
+      <div class="form-group">
+      <input class="form-control" placeholder="biography_length" required type="text" name="biography_length">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="yes or no, profile picture" required type="text" name="picture_availability">
+    </div>
+
+      <div class="form-group">
+      <input class="form-control" placeholder="yes or no , URL " required type="text" name="link_availability">
+    </div>
+
+      <div class="form-group">
+      <input class="form-control" placeholder="average_caption_length" required type="text" name="average_caption_length">
+    </div>
+
+    <input class="btn btn-primary btn-lg btn-block" type="submit" value='Predict'>
+
+  </form>
+</body>
+
+</html>
