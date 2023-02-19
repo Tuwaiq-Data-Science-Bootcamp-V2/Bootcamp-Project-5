@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home page</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+
+
+  <style>
+  .img {
+   margin:30px;
+  }
+    .center {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 30%;
+      transform: translate(-50%, -50%);
+      font-family: Arial, Helvetica,sans-serif ;
+      background-color: white;
+    }
+    .header-content {
+    margin-top: 50px;
+    text-align: left;
+    color: #121212;
+    text-align: center;
+       font-size: 80px;
+
+     }
+
+
+  </style>
+</head>
+
+
+<body class="center">
+<div>
+  <img  width="1200" height="200"src="https://t3.ftcdn.net/jpg/03/32/17/72/240_F_332177239_NSCVEuDO0OkNORhEQt9XjYrVp5NBK6WX.jpg" alt="Vector of a group of people using mobile gadgets communicating being attracted by social media app">
+
+
+</div>
+
+  <h1>
+   <i class='header-content'></i>Social Network Ads
+  </h1>
+
+
+
+  <form action="result">
+    {% csrf_token %}
+ <div class="form-group">
+      <label for="Gender">Gender:</label>
+      <input type="Gender" class="form-control" id="Gender" placeholder="Enter0 for Male, 1 for Female " required type="text" name="Gender">
+    </div>
+    <!div class="form-group">
+      <!input class="form-control" placeholder="Gender(0 for Male, 1 for Female)" required type="text" name="Gender">
+    <!/div>
+ <div class="form-group">
+      <label for="Age">Age:</label>
+      <input type="Age" class="form-control" id="Age" placeholder="Enter Age " required type="text"name="Age">
+    </div>
+
+    <!div class="form-group">
+      <!input class="form-control" placeholder="Age" required type="text" name="Age">
+    <!/div>
+<div class="form-group">
+      <label for="EstimatedSalary">EstimatedSalary:</label>
+      <input type="EstimatedSalary" class="form-control" id="EstimatedSalary" placeholder="EnterEstimatedSalary " required type="text"name="EstimatedSalary">
+    </div>
+
+    <!div class="form-group">
+      <!input class="form-control" placeholder="EstimatedSalary" required type="text" name="EstimatedSalary">
+    <!/div>
+       <input class="btn btn-primary btn-lg btn-block" type="submit" value='Predict'>
+
+  </form>
+</body>
+
+</html>
