@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Result</title>
+
+  <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/eaf5e1e439.js" crossorigin="anonymous"></script>
+
+  <style>
+    .center {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-family:"Lucida Console", "Courier New", monospace;
+      background-color:SlateBlue;
+    }
+  </style>
+</head>
+
+<body class="center">
+
+  {% if result == 'no' %}
+  <h1 style="color: white; font-weight: 900;">
+    <i class="fa-regular fa-thumbs-up"></i> Real
+
+  {% elif result == 'yes' %}
+    <h1 style="color: white; font-weight: 900;">
+    <i class="fa-regular fa-thumbs-down"></i>Fake
+
+      {% else %}
+    <h1 style="color: white; font-weight: 900;">ERROR</h1>
+      {% endif %}
+
+</body>
+
+</html>
