@@ -38,4 +38,5 @@
 ## Team members and their roles:
 
     - Logistic Regression Model
+    - DissionTree
 
